@@ -20,6 +20,10 @@ export class Wallet {
   amount: number;
   @Column()
   userId: number;
+  @Column({ nullable: true })
+  reason: string;
+  @Column({ nullable: true })
+  productId: number;
   @CreateDateColumn()
   created_at: Date;
   @ManyToOne(() => User, (user) => user.transactions, { onDelete: 'SET NULL' })

@@ -1,4 +1,4 @@
 export enum WalletType {
-  Deposite = 'deposite',
+  Deposit = 'deposit',
   Withdraw = 'withdraw',
 }

@@ -5,6 +5,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { TypeOrmConfig } from './config/typeorm';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(TypeOrmConfig()), WalletModule, UserModule],
+  imports: [TypeOrmModule.forRoot(TypeOrmConfig()), UserModule, WalletModule],
 })
 export class AppModule {}
